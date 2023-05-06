@@ -21,5 +21,9 @@ const usersSchema = new Schema({
         require: true,
         unique: true
     }
-
+}, {
+    collection: "users"
 })
+
+
+export default model("Users", usersSchema)
